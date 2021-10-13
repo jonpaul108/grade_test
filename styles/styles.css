@@ -1,0 +1,171 @@
+:root {
+  --main-gey-border: 1px solid rgba(0,0,0,0.3);
+  --main-font-size: 1.5rem;
+  --main-font-color: black;
+  --grade-accept-green: #53900f;
+  --grade-two-week-yellow: #D6CE15;
+  --grade-four-week-red: #FF6666;
+  --small-font-size: 0.7em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+}
+
+body {
+  min-width: 100vh;
+  padding: 5px 10px;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.grading_bar_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: var(--main-font-size);
+  color: var(--main-font-color);
+  flex: 1;
+  margin-top: 2em;
+  gap: 1.5em;
+}
+
+.prompt {
+  border-left: var(--main-gey-border);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgba(0,0,0,1);
+  border-radius: 5px;  
+  padding: 1em;
+}
+
+.promptNum {
+  height: 100%;
+  width: 6em;
+  border-right: solid 1px black;
+  align-items: center;
+  display: flex;
+}
+
+.grading {
+  flex: 1;
+  min-width: 35em;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  gap: 1em;
+}
+
+
+.grade_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+
+.gradeTitle, .result {
+  font-size: 0.8em;
+}
+
+.gradeTitle {
+  color: rgba(0,0,0,0.5)
+}
+
+.result {
+  font-weight: 600;
+  min-width: 5em;
+}
+
+.grade_block {
+  width: 3em;
+  height: 1.5em;
+  display: inline-block;
+  border: var(--main-gey-border);
+  background-color: rgba(0,0,0,0.08);
+}
+
+.four-week {
+  background-color: var(--grade-four-week-red);
+}
+
+.two-week {
+  background-color: var(--grade-two-week-yellow);
+}
+
+.accept {
+  background-color: var(--grade-accept-green);
+}
+
+/* .grade_block:nth-child(1) {
+  margin-left: 1em;
+} */
+
+.skill_title {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -125%);
+}
+
+.sub_data {
+  position: absolute;
+  right: 0;
+  transform : translateY(150%);
+  font-size: var(--small-font-size);
+}
+
+.horsepower_autonomy_container {
+  gap: 1em;
+}
+
+.essential_skill-container {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  display: grid;
+  gap: 0.5em;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: end;
+  justify-items: center;
+  border-top: dotted grey 1px;
+}
+
+.skill {
+  width: 6em;
+  gap: 5px;
+}
+
+.essential_skill_title {
+  display: block;
+  font-size: 0.7em;
+  text-align: center;
+  max-width: 100%;
+}
+.skill_bars {
+  position: relative;
+}
+
+.skill_bars > span {
+  width: 2em;
+  height: 1em;
+}
+
+.section_title {
+  grid-column: span 2;
+  display: inline-block;
+  text-align: center;
+   margin-top: 0.5em;
+}
+
+
