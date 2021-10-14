@@ -168,4 +168,37 @@ body {
    margin-top: 0.5em;
 }
 
+.debugging_skills_container {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: center;
+  justify-items: end;
+  border-top: dotted grey 1px;
+  position: relative;
+}
 
+.problem_solving_skills_container {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: center;
+  justify-items: end;
+  border-top: dotted grey 1px;
+  position: relative;
+}
+
+.n_a {
+  position: absolute;
+  top: 1em;
+  font-size: 1.5em;
+  color: rgba(0,0,0,0.3);
+}
