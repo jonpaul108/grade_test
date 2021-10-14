@@ -9,9 +9,9 @@
   color: var(--grade-four-week-red);
 }
 
-/* .shrink {
-  transform: scale(0.7);
-} */
+.grey-text {
+  color: rgba(0,0,0, 0.3);
+}
 
 .flex-row {
   display: flex;
