@@ -25,7 +25,7 @@ export const weatherData = {
     {
       promptNum: 7,
       promptName: "Filtering Temperatures - Debug",
-      essentialSkills: ["Code Comprehension", "Array Knowledge", "For Loops"],
+      essentialSkills: ["Array Knowledge", "For Loops"],
       debugging: [
         "Intentional Console.logging",
         "Interpreting Error Messages",
@@ -43,11 +43,13 @@ export const weatherData = {
         "Dot versus Bracket Notation",
         "Object Knowledge",
         "Objects Versus Arrays",
-        "Array Knowledge",
         "Nested Structures Traversal",
-        "Function Knowledge",
         "Concatenation and Reassignment",
         "Data Types",
+        "Execution Flow - variable assignment",
+        "Execution Flow - conditionals assignment",
+        "Execution Flow - return statements",
+
       ],
       debugging: [
         "Intentional Console.logging",

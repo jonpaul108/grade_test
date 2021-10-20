@@ -1,0 +1,31 @@
+{
+  "name": "grade_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/index.js",
+    "build": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonpaul108/grade_test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonpaul108/grade_test/issues"
+  },
+  "homepage": "https://github.com/jonpaul108/grade_test#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0"
+  }
+}
